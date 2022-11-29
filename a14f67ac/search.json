@@ -1,0 +1,380 @@
+[
+  {
+    "objectID": "case_control.html#cohort-study",
+    "href": "case_control.html#cohort-study",
+    "title": "Case Control Study",
+    "section": "Cohort study",
+    "text": "Cohort study\n\n\n\n\n\n\n\n\n\n\nRisk\nNon-event to event\nTemporality\nIncidence\nRelative risk\nAttributable risk"
+  },
+  {
+    "objectID": "case_control.html#when-longitudinal-follow-up-is-not-possible",
+    "href": "case_control.html#when-longitudinal-follow-up-is-not-possible",
+    "title": "Case Control Study",
+    "section": "When longitudinal follow up is not possible",
+    "text": "When longitudinal follow up is not possible\n\nLong latency period of chronic diseases\n\nSmoking ~ CVD, Lung cancer\nDiet & exercise ~ Osteoporosis\n\nDisease incidence ~ relatively few\n\nbut all to be followed\n\nVery rare diseases- cohort way inefficient"
+  },
+  {
+    "objectID": "case_control.html#example-1-atypical-fractures",
+    "href": "case_control.html#example-1-atypical-fractures",
+    "title": "Case Control Study",
+    "section": "Example-1: Atypical fractures",
+    "text": "Example-1: Atypical fractures\n\nmid 2000s, ~ unusual form of femoral fracture in women\nBisphosphonates suspected because\n\nnewly introduced at that time\nact by reducing bone remodeling.\n\nCase series ~ bisphosphonates and atypical fractures,\n\nother drugs\nother diseases\n\nWhether bisphosphonates were independently associated with atypical fractures?"
+  },
+  {
+    "objectID": "case_control.html#example-1-atypical-fractures-1",
+    "href": "case_control.html#example-1-atypical-fractures-1",
+    "title": "Case Control Study",
+    "section": "Example-1: Atypical fractures",
+    "text": "Example-1: Atypical fractures"
+  },
+  {
+    "objectID": "case_control.html#example-1-atypical-fractures-2",
+    "href": "case_control.html#example-1-atypical-fractures-2",
+    "title": "Case Control Study",
+    "section": "Example-1: Atypical fractures",
+    "text": "Example-1: Atypical fractures\nBisphonates use and atypical fractures of femoral shaft(Schilcher, Michaëlsson, and Aspenberg 2011)\n\nNational Swedish Patient Register,\nall 59 women age 55 years or older with atypical femoral fractures in 2008\n263 controls, women in the same registry who had had ordinary femoral fractures\nother variables - age, use of bone-modifying drugs (corticosteroids or estrogens), and diseases such as osteoporosis and previous fractures\nconcluded women taking bisphosphonates were 33 times more likely to develop atypical fractures"
+  },
+  {
+    "objectID": "case_control.html#flow-of-case-control-study",
+    "href": "case_control.html#flow-of-case-control-study",
+    "title": "Case Control Study",
+    "section": "Flow of Case-Control Study",
+    "text": "Flow of Case-Control Study"
+  },
+  {
+    "objectID": "case_control.html#control",
+    "href": "case_control.html#control",
+    "title": "Case Control Study",
+    "section": "Control",
+    "text": "Control\n\nControl in other situations\nExperimental studies\n\nthose who are not exposed to the intervention\n\nDiagnostic laboratories\n\nSpecimen which have known amount of what is being tested\n\nCase-control study-\n\nthose who do not have disease or outcome\ncontrols- take in account or subtract the effects of other variables"
+  },
+  {
+    "objectID": "case_control.html#selection-of-cases",
+    "href": "case_control.html#selection-of-cases",
+    "title": "Case Control Study",
+    "section": "Selection of cases",
+    "text": "Selection of cases\n\nDiagnosis - rigorously confirmed\nAll cases or representative sample from defined population\nHospital cases\n\nSeverity or atypical nature\nCatchment area"
+  },
+  {
+    "objectID": "case_control.html#selection-of-controls",
+    "href": "case_control.html#selection-of-controls",
+    "title": "Case Control Study",
+    "section": "Selection of controls",
+    "text": "Selection of controls\n\nValidity- comparability of cases and controls\nCases and controls should be members of same base population\nRandom sample of non-cases\nMethods of selection\n\nPopulation approach\nCohort approach\nHospital & Community approach"
+  },
+  {
+    "objectID": "case_control.html#population-approach",
+    "href": "case_control.html#population-approach",
+    "title": "Case Control Study",
+    "section": "Population approach",
+    "text": "Population approach\n\nRandom sample of defined population\nDynamic population\nCases and controls selected at similar calender time"
+  },
+  {
+    "objectID": "case_control.html#cohort-approach",
+    "href": "case_control.html#cohort-approach",
+    "title": "Case Control Study",
+    "section": "Cohort approach",
+    "text": "Cohort approach\n\nCases and control sampled from same cohort\nAll cases and random sample from base cohort\n\nCase-cohort study\n\nAll cases and random sample at the time of incident case\n\nNested Case-Control study"
+  },
+  {
+    "objectID": "case_control.html#why-do-case-control-within-cohort",
+    "href": "case_control.html#why-do-case-control-within-cohort",
+    "title": "Case Control Study",
+    "section": "Why do case-control within cohort?",
+    "text": "Why do case-control within cohort?\n\nWhen variables not available in cohort base are to be studied\nnot collected at base\n\nnot feasible to collect for all participants at baseline\ncost\n\nadditional biomarkers\ngenetic analysis\n\ntime\n\nmissing information from records\nadditional questionnaire"
+  },
+  {
+    "objectID": "case_control.html#hospital-and-community-controls",
+    "href": "case_control.html#hospital-and-community-controls",
+    "title": "Case Control Study",
+    "section": "Hospital and Community Controls",
+    "text": "Hospital and Community Controls\n\n\nHospital\n\nSelect comparable controls\nCases from hospital ward- controls from a different disease from same hospital\nHospitalized patients usually have different distribution compared to the rest of the population\n\n\nCommunity\n\nFrom catchment area of hospital\nNeighborhood controls"
+  },
+  {
+    "objectID": "case_control.html#measurement-of-exposure",
+    "href": "case_control.html#measurement-of-exposure",
+    "title": "Case Control Study",
+    "section": "Measurement of exposure",
+    "text": "Measurement of exposure\n\nMore than one control group\n\nCommunity\nHospital\n\nAnother disease\nNon-diseased - Caregivers\n\n\nOdds ratios across groups\n\nSimilar- less likelihood of bias\nHeterogeneous- Bias likely"
+  },
+  {
+    "objectID": "case_control.html#multiple-controls-per-case",
+    "href": "case_control.html#multiple-controls-per-case",
+    "title": "Case Control Study",
+    "section": "Multiple controls per case",
+    "text": "Multiple controls per case\n\nDifferent from multiple control groups\nMore than 1 control for a cases\nUseful in case of very rare disease as cases will be few\nTo improve statistical power\nMaximum up to 3 to 4 controls per case"
+  },
+  {
+    "objectID": "case_control.html#measurement-of-exposure-1",
+    "href": "case_control.html#measurement-of-exposure-1",
+    "title": "Case Control Study",
+    "section": "Measurement of exposure",
+    "text": "Measurement of exposure\n\nComplete & accurate records before development of disease\nCan be done for prescriptions, medical records of investigations, procedures or done on stored samples\nBehavioral exposures\nDiet, exercise, substance use etc Disease status may influence recall\nExposure measurement methods and tools to be same for both cases and controls"
+  },
+  {
+    "objectID": "case_control.html#comparisons",
+    "href": "case_control.html#comparisons",
+    "title": "Case Control Study",
+    "section": "Comparisons",
+    "text": "Comparisons\n\n\nCohort Study\n\nWe know totals of exposed and non-exposed since we only fix them\nWe estimate incidence in exposed & non-exposed and compare relative incidence \n\n\nCase-Control Study\n\nWe know totals of Cases and Non-cases since we only fix them\nWe estimate exposure odds among cases & non-cases & compute ratio of two odds"
+  },
+  {
+    "objectID": "case_control.html#odds-ratio",
+    "href": "case_control.html#odds-ratio",
+    "title": "Case Control Study",
+    "section": "Odds ratio",
+    "text": "Odds ratio\n\\(Odds\\ of\\ exposure\\ in\\ Cases = \\frac{Number\\ of\\ exposed\\ among\\ Cases}{Number\\ of\\ non-exposed\\ among\\ Cases}\\)\n\\(Odds\\ of\\ exposure\\ in\\ Cases = \\frac{a}{c}\\)\n\n\\(Odds\\ of\\ exposure\\ in\\ Non-Cases = \\frac{Number\\ of\\ exposed\\ among\\ Non-Cases}{Number\\ of\\ non-exposed\\ among\\ Non-Cases}\\)\n\n\\(Odds\\ of\\ exposure\\ in\\ Non-Cases = \\frac{b}{c}\\)\n\\(Odds\\ ratio = \\frac{Odds\\ of\\ exposure\\ among\\ Cases}{Odds\\ of\\ exposure\\ among\\ Non-Cases}\\)\n\\(Odds\\ ratio = \\frac{ad}{bc}\\)"
+  },
+  {
+    "objectID": "case_control.html#interpretation-of-odds-ratio",
+    "href": "case_control.html#interpretation-of-odds-ratio",
+    "title": "Case Control Study",
+    "section": "Interpretation of Odds Ratio",
+    "text": "Interpretation of Odds Ratio\n\nAssociation of exposure and outcome\nOR > 1 (more than one)\n\nCases are more likely to be exposed than non-cases. Exposure may be a risk factor\n\nOR < 1 (less than one)\n\nCases are less likely to be exposed than non-cases. Exposure may be a protective factor\n\nOR =1 (nearly one)\n\nExposure variable is similarly distributed among Cases and Non-Cases"
+  },
+  {
+    "objectID": "case_control.html#example-bisphosnates-and-atypical-fracture",
+    "href": "case_control.html#example-bisphosnates-and-atypical-fracture",
+    "title": "Case Control Study",
+    "section": "Example: Bisphosnates and Atypical Fracture",
+    "text": "Example: Bisphosnates and Atypical Fracture\n\n\n             Outcome +    Outcome -      Total        Prevalence *        Odds\nExposed +           46           26         72                63.9      1.7692\nExposed -           13          237        250                 5.2      0.0549\nTotal               59          263        322                18.3      0.2243\n\nPoint estimates and 95% CIs:\n-------------------------------------------------------------------\nOdds ratio                                     32.25 (15.44, 67.39)\nAttrib fraction (est) in the exposed (%)      96.84 (93.16, 98.62)\nAttrib fraction (est) in the population (%)   75.55 (60.42, 84.90)\n-------------------------------------------------------------------\nUncorrected chi2 test that OR = 1: chi2(1) = 128.657 Pr>chi2 = <0.001\nFisher exact test that OR = 1: Pr>chi2 = <0.001\n Wald confidence limits\n CI: confidence interval\n * Outcomes per 100 population units"
+  },
+  {
+    "objectID": "case_control.html#selection-of-cases-1",
+    "href": "case_control.html#selection-of-cases-1",
+    "title": "Case Control Study",
+    "section": "Selection of cases",
+    "text": "Selection of cases\n\nPrevalent cases\n\nAssociated factors for duration, survivors\n\nHospitals\n\nSeverity\nSocio-economic position\n\nDifferential selection probability"
+  },
+  {
+    "objectID": "case_control.html#selection-of-controls-1",
+    "href": "case_control.html#selection-of-controls-1",
+    "title": "Case Control Study",
+    "section": "Selection of controls",
+    "text": "Selection of controls\n\nHospital\n\nDistinct distribution of variables than population\n\nHousehold / Best friend\n\nOver-matching\n\nPopulation\n\nNon-response"
+  },
+  {
+    "objectID": "case_control.html#measurement-of-exposure-2",
+    "href": "case_control.html#measurement-of-exposure-2",
+    "title": "Case Control Study",
+    "section": "Measurement of exposure",
+    "text": "Measurement of exposure\n\nPoor or limited recall\n\nPast exposures not remembered well hence not reported\nNon-differential misclassification\n\nDifferential recall\n\nDiseased or cases easily identify with exposure than non-cases\nDifferential misclassification"
+  },
+  {
+    "objectID": "case_control.html#sources-of-presentation",
+    "href": "case_control.html#sources-of-presentation",
+    "title": "Case Control Study",
+    "section": "Sources of presentation",
+    "text": "Sources of presentation\nChapter-6 Risk: From disease to exposure (Fletcher, Fletcher, and Msc 2013)\nChapter- 7 & 9 : Observational studies (Celentano and Szklo 2018)"
+  },
+  {
+    "objectID": "case_control.html#references",
+    "href": "case_control.html#references",
+    "title": "Case Control Study",
+    "section": "References",
+    "text": "References\n\n\n\nStudy Designs Workshop @ AIIMS Bhopal\n\n\n\nCelentano, David D., and Moyses Szklo. 2018. Gordis Epidemiology. Elsevier Health Sciences.\n\n\nFletcher, Robert, Suzanne W. Fletcher, and Suzanne W. Fletcher, MD Msc. 2013. Clinical Epidemiology: The Essentials. Lippincott Williams & Wilkins.\n\n\nSchilcher, Jörg, Karl Michaëlsson, and Per Aspenberg. 2011. “Bisphosphonate Use and Atypical Fractures of the Femoral Shaft.” New England Journal of Medicine 364 (18): 1728–37. https://doi.org/10.1056/NEJMoa1010650."
+  },
+  {
+    "objectID": "sample_size.html#what-to-expect-from-this-session",
+    "href": "sample_size.html#what-to-expect-from-this-session",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "What to expect from this session?",
+    "text": "What to expect from this session?\n\nYou will be able calculate sample size for common research study designs.\nWrite a statement for sample size calculation in your protocol\nThis session is NOT about\n\ndetailing concepts of sample size calculation\nStatistical or mathematical basis of sample size formulae\nLearning sample size formulae"
+  },
+  {
+    "objectID": "sample_size.html#need-to-calculate-sample-size",
+    "href": "sample_size.html#need-to-calculate-sample-size",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Need to calculate sample size",
+    "text": "Need to calculate sample size\n\nPower\nValidity of conclusions\nOptimal usage of resources\nEthics\n\n\nOne of the key element of any research is to decide number of participants required to be enrolled in the study. We have to take decision on sample size at the time of developing protocol of the study. But why we need to decide sample size? We design study to draw valid conclusions. We want that results of our study should stand and be precise to add to the scientific evidence. This means our experiment or study should have enough power to detect what is being investigated. Science is about trial and error, we conduct a trial and explore for errors in the trial. Our aim is to keep errors to the minimum. Enrolling enough sample size to keep errors low is required for successful study. This decision has implications for the budget as well as time required for the study. If we enroll too many subjects than required for enough power, then it is wastage of resources as well as unethical in the sense it may expose more people if something is invasive or harmful. If we enroll too few subjects , then it may not have enough power and our conclusions will not stand. It is also unethical because you have exposed people to certain risk under your research and that research is now inconclusive. Thus, sample size calculation has to be done at the protocol stage."
+  },
+  {
+    "objectID": "sample_size.html#pre-requisites-for-sample-size-estimation",
+    "href": "sample_size.html#pre-requisites-for-sample-size-estimation",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Pre-requisites for sample size estimation",
+    "text": "Pre-requisites for sample size estimation\n\nClear research question/hypothesis\nStatistical test- for effect estimation or testing\nAssumptions or expected results or prior data Width or precision around expected results (Confidence interval)\nConfidence level (related to Type-I error)\nPower (related to Type-II error)"
+  },
+  {
+    "objectID": "sample_size.html#special-considerations-for-thesis",
+    "href": "sample_size.html#special-considerations-for-thesis",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Special considerations for thesis",
+    "text": "Special considerations for thesis\n\nSample size calculations will be required only when you have\n\nsome hypothesis to test (comparisons or associations) or\nto estimate prevalence or mean\n\nSample size calculations will NOT be required when your aim is to merely\n\ndescribe the phenomenon or\nprofiling of patients with certain condition or\npilot investigation\nsample size for such studies will be based on logistics and feasibility"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-calculators",
+    "href": "sample_size.html#sample-size-calculators",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample Size Calculators",
+    "text": "Sample Size Calculators\n\nOpenEpi\nG*Power\nSample Size Web Application\nR - {pwr} package"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-estimate-single-proportion",
+    "href": "sample_size.html#sample-size-to-estimate-single-proportion",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to estimate single proportion",
+    "text": "Sample size to estimate single proportion\n\nPrior data or expected proportion\nDecide relative error ( how much relative to proportion)\nDecide level of confidence (95% or more)\nExample"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-estimate-single-proportion--demo",
+    "href": "sample_size.html#sample-size-to-estimate-single-proportion--demo",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to estimate single proportion- Demo",
+    "text": "Sample size to estimate single proportion- Demo\n\n\nSample Size Web App\n\n\n\n\n\n\nHow to guide"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-estimate-single-proportion-by-hand",
+    "href": "sample_size.html#sample-size-to-estimate-single-proportion-by-hand",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to estimate single proportion by hand",
+    "text": "Sample size to estimate single proportion by hand\n\\[\nn = 4  p  q / d^2\n\\]\n\np : expected proportion\nq : 1- p\nd : acceptable error around proportion\nestimates sample size with 95% confidence level"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-compare-two-independent-proportions",
+    "href": "sample_size.html#sample-size-to-compare-two-independent-proportions",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to compare two independent proportions",
+    "text": "Sample size to compare two independent proportions\n\nPrior data or expected proportions\nDecide Type-I error\nDecide Type-II error\nExample"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-compare-two-independent-proportions--demo",
+    "href": "sample_size.html#sample-size-to-compare-two-independent-proportions--demo",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to compare two independent proportions- Demo",
+    "text": "Sample size to compare two independent proportions- Demo\n\n\nhttps://wnarifin.github.io/ssc_web.html\n\n\nNULL\n\n\n\nHow to guide"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-compare-two-independent-proportions-by-hand",
+    "href": "sample_size.html#sample-size-to-compare-two-independent-proportions-by-hand",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to compare two independent proportions by hand",
+    "text": "Sample size to compare two independent proportions by hand\n\\[\nn = 16  P  Q / d^2\n\\]\n\n\\(P = (p1 + p2)/2\\)\n\\(Q = 1-P\\)\n\\(d = p1 - p2\\)\np1 : proportion in Group-1 and p2 : proportion in Group-2\ncalculated sample size is per group\nestimates sample size with 95% confidence level and 80% power"
+  },
+  {
+    "objectID": "sample_size.html#gpower-resources",
+    "href": "sample_size.html#gpower-resources",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "G*Power resources",
+    "text": "G*Power resources\nG*Power Home Page\nG*Power Tutorials\n\n\n\nPG Thesis Protocol Workshop @ AIIMS Bhopal"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Epidemiology Resources",
+    "section": "",
+    "text": "This website is created for hosting the resources related to epidemiology and biostatistics particularly for the clinical and public health researchers."
+  },
+  {
+    "objectID": "diagrams.html#identify-the-design",
+    "href": "diagrams.html#identify-the-design",
+    "title": "Schema of Study Designs",
+    "section": "Identify the design",
+    "text": "Identify the design"
+  },
+  {
+    "objectID": "diagrams.html#design-of-randomized-controlled-trial-13",
+    "href": "diagrams.html#design-of-randomized-controlled-trial-13",
+    "title": "Schema of Study Designs",
+    "section": "Design of randomized controlled trial (1/3)",
+    "text": "Design of randomized controlled trial (1/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-randomized-controlled-trial-23",
+    "href": "diagrams.html#design-of-randomized-controlled-trial-23",
+    "title": "Schema of Study Designs",
+    "section": "Design of randomized controlled trial (2/3)",
+    "text": "Design of randomized controlled trial (2/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-randomized-controlled-trial-33",
+    "href": "diagrams.html#design-of-randomized-controlled-trial-33",
+    "title": "Schema of Study Designs",
+    "section": "Design of randomized controlled trial (3/3)",
+    "text": "Design of randomized controlled trial (3/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-cohort-study-13",
+    "href": "diagrams.html#design-of-cohort-study-13",
+    "title": "Schema of Study Designs",
+    "section": "Design of cohort study (1/3)",
+    "text": "Design of cohort study (1/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-cohort-study-23",
+    "href": "diagrams.html#design-of-cohort-study-23",
+    "title": "Schema of Study Designs",
+    "section": "Design of cohort study (2/3)",
+    "text": "Design of cohort study (2/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-cohort-study-33",
+    "href": "diagrams.html#design-of-cohort-study-33",
+    "title": "Schema of Study Designs",
+    "section": "Design of cohort study (3/3)",
+    "text": "Design of cohort study (3/3)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-case-control-study-14",
+    "href": "diagrams.html#design-of-case-control-study-14",
+    "title": "Schema of Study Designs",
+    "section": "Design of case control study (1/4)",
+    "text": "Design of case control study (1/4)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-case-control-study-24",
+    "href": "diagrams.html#design-of-case-control-study-24",
+    "title": "Schema of Study Designs",
+    "section": "Design of case control study (2/4)",
+    "text": "Design of case control study (2/4)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-case-control-study-34",
+    "href": "diagrams.html#design-of-case-control-study-34",
+    "title": "Schema of Study Designs",
+    "section": "Design of case control study (3/4)",
+    "text": "Design of case control study (3/4)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-case-control-study-44",
+    "href": "diagrams.html#design-of-case-control-study-44",
+    "title": "Schema of Study Designs",
+    "section": "Design of case control study (4/4)",
+    "text": "Design of case control study (4/4)"
+  },
+  {
+    "objectID": "diagrams.html#design-of-cross-sectional-analytical-type",
+    "href": "diagrams.html#design-of-cross-sectional-analytical-type",
+    "title": "Schema of Study Designs",
+    "section": "Design of cross-sectional( analytical type)",
+    "text": "Design of cross-sectional( analytical type)"
+  },
+  {
+    "objectID": "diagrams.html#identify-the-design-1",
+    "href": "diagrams.html#identify-the-design-1",
+    "title": "Schema of Study Designs",
+    "section": "Identify the design",
+    "text": "Identify the design"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Under construction"
+  },
+  {
+    "objectID": "confounding.html#confounding",
+    "href": "confounding.html#confounding",
+    "title": "Schema of Study Designs",
+    "section": "Confounding",
+    "text": "Confounding"
+  },
+  {
+    "objectID": "confounding.html#example-1",
+    "href": "confounding.html#example-1",
+    "title": "Schema of Study Designs",
+    "section": "Example-1",
+    "text": "Example-1"
+  }
+]
