@@ -1,0 +1,509 @@
+---
+title: "Schema of Study Designs"
+format: 
+  revealjs:
+      slide-number: true
+      logo: images/logo.png
+author: "Dr Abhijit P Pakhare"
+institute: "All India Institute of Medical Sciences, Bhopal"
+license: CC BY-NC
+editor: visual
+---
+
+## Identify the design
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph generic {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+A->B A->C B->D B->E C->F
+C->G 
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H F->I G->I
+}
+  [1]: ''
+  [2]: ''
+  [3]: ''
+  [4]: ''
+  [5]: ''
+  [6]: ''
+  [7]: ''
+  [8]: ''
+  [9]: ''
+  ")
+```
+
+## Design of randomized controlled trial (1/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph rct1 {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+
+# several 'edge' statements
+edge [label= 'randomization', fontsize=6]
+
+A->B A->C 
+
+
+}
+  [1]: 'Population'
+  [2]: 'Intervention'
+  [3]: 'Placebo or\\nStandard Care'
+  ")
+```
+
+## Design of randomized controlled trial (2/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph rct2 {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+
+# several 'edge' statements
+edge [label= 'randomization', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'follow-up', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+}
+  [1]: 'Population'
+  [2]: 'Intervention'
+  [3]: 'Placebo or\\nStandard Care'
+  [4]: 'Meets end point \\nor Outcome'
+  [5]: 'Do not meet end point \\nor Outcome'
+  [6]: 'Meets end point \\nor Outcome'
+  [7]: 'Do not meet end point \\nor Outcome'
+
+  ")
+```
+
+## Design of randomized controlled trial (3/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph rct {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'randomization', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'follow-up', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Intervention'
+  [3]: 'Placebo or\\nStandard Care'
+  [4]: 'Meets end point \\nor Outcome'
+  [5]: 'Do not meet end point \\nor Outcome'
+  [6]: 'Meets end point \\nor Outcome'
+  [7]: 'Do not meet end point \\nor Outcome'
+  [8]: 'Rate of event or outcome \\nin Intervention'
+  [9]: 'Rate of event or outcome \\nin Placebo or SOC'
+  ")
+```
+
+## Design of cohort study (1/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph cohort1 {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+
+# several 'edge' statements
+edge [label= 'ascertain', fontsize=6]
+
+A->B A->C 
+
+
+}
+  [1]: 'Population'
+  [2]: 'Exposed'
+  [3]: 'Non-exposed'
+  
+  ")
+```
+
+## Design of cohort study (2/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph cohort2 {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+
+# several 'edge' statements
+edge [label= 'ascertain', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'follow-up', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+}
+  [1]: 'Population'
+  [2]: 'Exposed'
+  [3]: 'Non-exposed'
+  [4]: 'Incident Cases'
+  [5]: 'Do not develop disease'
+  [6]: 'Incident Cases'
+  [7]: 'Do not develop disease'
+  
+  ")
+```
+
+## Design of cohort study (3/3)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph cohort {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'ascertain', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'follow-up', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Exposed'
+  [3]: 'Non-exposed'
+  [4]: 'Incident Cases'
+  [5]: 'Do not develop disease'
+  [6]: 'Incident Cases'
+  [7]: 'Do not develop disease'
+  [8]: 'Incidence of disease \\nin Exposed'
+  [9]: 'Incidence of disease \\nin Non-exposed'
+  ")
+```
+
+## Design of case control study (1/4)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph case_control1 {
+graph[rankdir = RL]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+
+edge [label= 'select', fontsize=6]
+
+# several 'edge' statements
+A->B A->C 
+}
+  [1]: 'Population'
+  [2]: 'Cases'
+  [3]: 'Non-Cases'
+  
+  ")
+```
+
+## Design of case control study (2/4)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph case_control2 {
+graph[rankdir = RL]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+
+# several 'edge' statements
+
+edge [label= 'select', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'assess', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+}
+  [1]: 'Population'
+  [2]: 'Cases'
+  [3]: 'Non-Cases'
+  [4]: 'Exposed'
+  [5]: 'Non-Exposed'
+  [6]: 'Exposed'
+  [7]: 'Non-Exposed'
+ 
+  ")
+```
+
+## Design of case control study (3/4)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph case_control3 {
+graph[rankdir = RL]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'select', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'assess', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H 
+F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Cases'
+  [3]: 'Non-Cases'
+  [4]: 'Exposed'
+  [5]: 'Non-Exposed'
+  [6]: 'Exposed'
+  [7]: 'Non-Exposed'
+  [8]: 'Odds of Exposure \\nin Cases'
+  [9]: 'Odds of Exposure \\nin Non-Cases'
+  ")
+```
+
+## Design of case control study (4/4)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph case_control {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'select', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'assess', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H 
+F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Cases'
+  [3]: 'Non-Cases'
+  [4]: 'Exposed'
+  [5]: 'Non-Exposed'
+  [6]: 'Exposed'
+  [7]: 'Non-Exposed'
+  [8]: 'Odds of Exposure \\nin Cases'
+  [9]: 'Odds of Exposure \\nin Non-Cases'
+  ")
+```
+
+## Design of cross-sectional( analytical type)
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph cross_sectional {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'classify', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'assess', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H 
+F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Exposed'
+  [3]: 'Non-exposed'
+  [4]: 'Presence of outcome'
+  [5]: 'Absence of outcome'
+  [6]: 'Presence of outcome'
+  [7]: 'Absence of outcome'
+  [8]: 'Prevalence of outcome \\nin Exposed'
+  [9]: 'Prevalence of outcome \\nin Non-exposed'
+  ")
+```
+
+## Identify the design
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph generic {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+A->B A->C B->D B->E C->F
+C->G 
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H F->I G->I
+}
+  [1]: ''
+  [2]: ''
+  [3]: ''
+  [4]: ''
+  [5]: ''
+  [6]: ''
+  [7]: ''
+  [8]: ''
+  [9]: ''
+  ")
+```
+
+# Thank You

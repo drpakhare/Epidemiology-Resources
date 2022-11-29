@@ -1,0 +1,188 @@
+---
+title: "Sample Size Calculations for Medical PG Thesis Protocol"
+format: 
+  revealjs:
+    toc: true
+    toc-depth: 1
+    toc-title: "Outline"
+    slide-number: true
+    logo: images/logo.png
+    footer: "PG Thesis Protocol Workshop @ AIIMS Bhopal"
+author: "Dr Abhijit P Pakhare"
+institute: "All India Institute of Medical Sciences, Bhopal"
+execute: 
+  echo: false
+  warning: false
+editor: visual
+bibliography: references.bib
+---
+
+```{r}
+library(qrcode)
+```
+
+## What to expect from this session?
+
+-   You will be able calculate sample size for common research study designs.
+
+-   Write a statement for sample size calculation in your protocol
+
+-   This session is NOT about
+
+    -   detailing concepts of sample size calculation
+
+    -   Statistical or mathematical basis of sample size formulae
+
+    -   Learning sample size formulae
+
+## Need to calculate sample size
+
+-   Power
+
+-   Validity of conclusions
+
+-   Optimal usage of resources
+
+-   Ethics
+
+::: notes
+One of the key element of any research is to decide number of participants required to be enrolled in the study. We have to take decision on sample size at the time of developing protocol of the study. But why we need to decide sample size? We design study to draw valid conclusions. We want that results of our study should stand and be precise to add to the scientific evidence. This means our experiment or study should have enough power to detect what is being investigated. Science is about trial and error, we conduct a trial and explore for errors in the trial. Our aim is to keep errors to the minimum. Enrolling enough sample size to keep errors low is required for successful study. This decision has implications for the budget as well as time required for the study. If we enroll too many subjects than required for enough power, then it is wastage of resources as well as unethical in the sense it may expose more people if something is invasive or harmful. If we enroll too few subjects , then it may not have enough power and our conclusions will not stand. It is also unethical because you have exposed people to certain risk under your research and that research is now inconclusive. Thus, sample size calculation has to be done at the protocol stage.
+:::
+
+## Pre-requisites for sample size estimation
+
+-   Clear research question/hypothesis
+
+-   Statistical test- for effect estimation or testing
+
+-   Assumptions or expected results or prior data Width or precision around expected results (Confidence interval)
+
+-   Confidence level (related to Type-I error)
+
+-   Power (related to Type-II error)
+
+## Special considerations for thesis {.smaller}
+
+-   Sample size calculations will be required only when you have
+
+    -   some hypothesis to test (comparisons or associations) or
+
+    -   to estimate prevalence or mean
+
+-   Sample size calculations will NOT be required when your aim is to merely
+
+    -   describe the phenomenon or
+
+    -   profiling of patients with certain condition or
+
+    -   pilot investigation
+
+    -   sample size for such studies will be based on logistics and feasibility
+
+## Sample Size Calculators
+
+-   OpenEpi
+
+-   G\*Power
+
+-   Sample Size Web Application
+
+-   R - {pwr} package
+
+## Sample size to estimate single proportion
+
+-   Prior data or expected proportion
+
+-   Decide relative error ( how much relative to proportion)
+
+-   Decide level of confidence (95% or more)
+
+-   Example
+
+## Sample size to estimate single proportion- Demo
+
+::: columns
+::: {.column width="50%"}
+[Sample Size Web App](https://wnarifin.github.io/ssc_web.html){.uri}
+
+```{r}
+webapp_qr <- plot(qr_code('https://wnarifin.github.io/ssc_web.html'))
+```
+:::
+
+::: {.column width="50%"}
+[How to guide](https://scribehow.com/shared/Sample_size_calculation_to_estimate_one_proportion__uGCbmF9IRw2MS8x2kB2Wig)
+
+```{r}
+plot(qr_code('https://scribehow.com/shared/Sample_size_calculation_to_estimate_one_proportion__uGCbmF9IRw2MS8x2kB2Wig'))
+```
+:::
+:::
+
+## Sample size to estimate single proportion by hand
+
+$$
+n = 4  p  q / d^2
+$$
+
+-   p : expected proportion
+
+-   q : 1- p
+
+-   d : acceptable error around proportion
+
+-   estimates sample size with 95% confidence level
+
+## Sample size to compare two independent proportions
+
+-   Prior data or expected proportions
+
+-   Decide Type-I error
+
+-   Decide Type-II error
+
+-   Example
+
+## Sample size to compare two independent proportions- Demo
+
+::: columns
+::: {.column width="50%"}
+[https://wnarifin.github.io/ssc_web.html](Web App Link){.uri}
+
+```{r}
+webapp_qr
+```
+:::
+
+::: {.column width="50%"}
+[How to guide](https://scribehow.com/shared/Sample_size_for_comparing_two_group_proportion__dGEA_2ibTKOswO3wKqkPDg)
+
+```{r}
+plot(qr_code('https://scribehow.com/shared/Sample_size_for_comparing_two_group_proportion__dGEA_2ibTKOswO3wKqkPDg'))
+```
+:::
+:::
+
+## Sample size to compare two independent proportions by hand
+
+$$
+n = 16  P  Q / d^2
+$$
+
+-   $P = (p1 + p2)/2$
+
+-   $Q = 1-P$
+
+-   $d = p1 - p2$
+
+-   p1 : proportion in Group-1 and p2 : proportion in Group-2
+
+-   calculated sample size is per group
+
+-   estimates sample size with 95% confidence level and 80% power
+
+## G\*Power resources
+
+[G\*Power Home Page](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower.html "https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower.html")
+
+[G\*Power Tutorials](https://stats.oarc.ucla.edu/other/gpower/ "https://stats.oarc.ucla.edu/other/gpower/")

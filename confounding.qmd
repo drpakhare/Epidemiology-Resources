@@ -1,0 +1,88 @@
+---
+title: "Schema of Study Designs"
+format: 
+  revealjs:
+      slide-number: true
+      logo: images/logo.png
+author: "Dr Abhijit P Pakhare"
+institute: "All India Institute of Medical Sciences, Bhopal"
+license: CC BY-NC
+editor: visual
+---
+
+## Confounding
+
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph rct1 {
+graph[rankdir = TB]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+
+# several 'edge' statements
+
+edge [label= '? association', fontsize=8, dir=forward, style=dashed]
+
+A->B 
+
+
+
+edge [label= 'associated causally', fontsize=8, dir=forward, style=solid]
+
+C->B 
+
+edge [label= 'associated causally or non-causally', fontsize=8, arrowhead=dot, arrowtail=dot, dir=both, style=solid]
+
+C->A
+}
+  [1]: 'Exposure'
+  [2]: 'Outcome'
+  [3]: 'Confounder'
+  ")
+```
+
+## Example-1
+```{r}
+library(DiagrammeR)
+grViz("
+digraph rct1 {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+
+# several 'edge' statements
+
+edge [label= '? association', fontsize=8, dir=forward, style=dashed]
+
+A->B 
+
+
+
+edge [label= 'causes', fontsize=8, dir=forward, style=solid]
+
+C->B 
+
+edge [label= 'usually taken together', fontsize=8, arrowhead=dot, arrowtail=dot, dir=both, style=solid]
+
+C->A
+}
+  [1]: 'Alcohol'
+  [2]: 'Lung Cancer'
+  [3]: 'Smoking'
+  ")
+```
+
+
+
+
+# Thank You

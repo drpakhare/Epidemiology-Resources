@@ -1,0 +1,452 @@
+---
+title: "Case Control Study"
+format: 
+  revealjs:
+    toc: true
+    toc-depth: 1
+    toc-title: "Outline"
+    slide-number: true
+    logo: images/logo.png
+    footer: "Study Designs Workshop @ AIIMS Bhopal"
+author: "Dr Abhijit P Pakhare"
+institute: "All India Institute of Medical Sciences, Bhopal"
+editor: visual
+bibliography: references.bib
+---
+
+# Need of Case-Control study
+
+## Cohort study
+
+::: columns
+::: {.column width="70%"}
+```{r}
+library(DiagrammeR)
+grViz("
+digraph cohort {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'ascertain', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'follow-up', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Exposed'
+  [3]: 'Non-exposed'
+  [4]: 'Incident Cases'
+  [5]: 'Do not develop disease'
+  [6]: 'Incident Cases'
+  [7]: 'Do not develop disease'
+  [8]: 'Incidence of disease \\nin Exposed'
+  [9]: 'Incidence of disease \\nin Non-exposed'
+  ")
+```
+:::
+
+::: {.column width="30%"}
+-   Risk
+
+-   Non-event to event
+
+-   Temporality
+
+-   Incidence
+
+-   Relative risk
+
+-   Attributable risk
+:::
+:::
+
+## When longitudinal follow up is not possible
+
+-   Long latency period of chronic diseases
+
+    -   Smoking \~ CVD, Lung cancer
+
+    -   Diet & exercise \~ Osteoporosis
+
+-   Disease incidence \~ relatively few
+
+    -   but all to be followed
+
+-   Very rare diseases- cohort way inefficient
+
+## Example-1: Atypical fractures
+
+-   mid 2000s, \~ unusual form of femoral fracture in women
+
+-   Bisphosphonates suspected because
+
+    -   newly introduced at that time
+
+    -   act by reducing bone remodeling.
+
+-   Case series \~ bisphosphonates and atypical fractures,
+
+    -   other drugs
+
+    -   other diseases
+
+-   Whether bisphosphonates were independently associated with atypical fractures?
+
+    ## 
+
+## Example-1: Atypical fractures
+
+```{r}
+library(DiagrammeR)
+mermaid("
+graph LR
+A(Population)-->B[Atypical Femoral # <br>   n=59]
+A(Population)-->F[Ordinary Femoral # <br>   n=218]
+B-->D[h/o of Bisphosphonates <br> n= 46]
+B-->E[No h/o of Bisphosphonates <br> n= 13]
+F-->G[h/o of Bisphosphonates <br> n= 26]
+F-->H[No h/o of Bisphosphonates <br> n= 237]
+D-->I{Odds of exposure <br> in Atypical # 46/13}
+E-->I
+G-->J{Odds of exposure <br> in Ordinary # 26/237}
+H-->J
+style F fill:#E5E25F
+style B fill:#BDA7A7
+style D fill:#CD6C6C
+style G fill:#CD6C6C
+")
+```
+
+## Example-1: Atypical fractures {.smaller}
+
+Bisphonates use and atypical fractures of femoral shaft[@schilcher2011]
+
+-   National Swedish Patient Register,
+-   all 59 women age 55 years or older with atypical femoral fractures in 2008
+-   263 controls, women in the same registry who had had ordinary femoral fractures
+-   other variables - age, use of bone-modifying drugs (corticosteroids or estrogens), and diseases such as osteoporosis and previous fractures
+-   concluded women taking bisphosphonates were 33 times more likely to develop atypical fractures
+
+# Design of Case-Control Study
+
+## Flow of Case-Control Study
+
+```{r}
+library(DiagrammeR)
+grViz("
+digraph case_control {
+graph[rankdir = LR]
+
+node [fontname = Helvetica, shape=box,  style=filled]
+
+A [label = '@@1', fillcolor= LightBlue]
+B [label = '@@2', fillcolor= SandyBrown]
+C [label = '@@3', fillcolor= LimeGreen]
+D [label = '@@4', fillcolor= Salmon]
+E [label = '@@5', fillcolor= LightCyan]
+F [label = '@@6', fillcolor= Salmon]
+G [label = '@@7', fillcolor= LightCyan]
+H [label = '@@8', fillcolor= LightPink]
+I [label = '@@9', fillcolor= LightPink]
+# several 'edge' statements
+edge [label= 'select', fontsize=6]
+
+A->B A->C 
+
+edge [label= 'assess', fontsize=6]
+
+B->D B->E 
+C->F C->G 
+
+edge [arrowhead = none, arrowtail = none, style=tapered, label= 'estimate', fontsize=6]
+D->H E->H 
+F->I G->I
+}
+  [1]: 'Population'
+  [2]: 'Cases'
+  [3]: 'Non-Cases'
+  [4]: 'Exposed'
+  [5]: 'Non-Exposed'
+  [6]: 'Exposed'
+  [7]: 'Non-Exposed'
+  [8]: 'Odds of Exposure \\nin Cases'
+  [9]: 'Odds of Exposure \\nin Non-Cases'
+  ")
+```
+
+## Control
+
+-   Control in other situations
+
+-   Experimental studies
+
+    -   those who are not exposed to the intervention
+
+-   Diagnostic laboratories
+
+    -   Specimen which have known amount of what is being tested
+
+-   Case-control study-
+
+    -   those who do not have disease or outcome
+
+    -   controls- take in account or subtract the effects of other variables
+
+## Selection of cases
+
+-   Diagnosis - rigorously confirmed
+
+-   All cases or representative sample from defined population
+
+-   Hospital cases
+
+    -   Severity or atypical nature
+
+    -   Catchment area
+
+## Selection of controls
+
+-   Validity- comparability of cases and controls
+
+-   Cases and controls should be members of same base population
+
+-   Random sample of non-cases
+
+-   Methods of selection
+
+    -   Population approach
+
+    -   Cohort approach
+
+    -   Hospital & Community approach
+
+## Population approach
+
+-   Random sample of defined population
+
+-   Dynamic population
+
+-   Cases and controls selected at similar calender time
+
+## Cohort approach
+
+-   Cases and control sampled from same cohort
+
+-   All cases and random sample from base cohort
+
+    -   Case-cohort study
+
+-   All cases and random sample at the time of incident case
+
+    -   Nested Case-Control study
+
+## Why do case-control within cohort?
+
+-   When variables not available in cohort base are to be studied
+
+-   not collected at base
+
+    -   not feasible to collect for all participants at baseline
+    -   cost
+        -   additional biomarkers
+
+        -   genetic analysis
+    -   time
+        -   missing information from records
+
+        -   additional questionnaire
+
+## Hospital and Community Controls {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Hospital
+
+-   Select comparable controls
+
+-   Cases from hospital ward- controls from a different disease from same hospital
+
+-   Hospitalized patients usually have different distribution compared to the rest of the population
+:::
+
+::: {.column width="50%"}
+Community
+
+-   From catchment area of hospital
+
+-   Neighborhood controls
+:::
+:::
+
+## Measurement of exposure
+
+-   More than one control group
+
+    -   Community
+
+    -   Hospital
+
+        -   Another disease
+
+        -   Non-diseased - Caregivers
+
+-   Odds ratios across groups
+
+    -   Similar- less likelihood of bias
+    -   Heterogeneous- Bias likely
+
+## Multiple controls per case
+
+-   Different from multiple control groups
+
+-   More than 1 control for a cases
+
+-   Useful in case of very rare disease as cases will be few
+
+-   To improve statistical power
+
+-   Maximum up to 3 to 4 controls per case
+
+## Measurement of exposure {.smaller}
+
+-   Complete & accurate records before development of disease
+
+-   Can be done for prescriptions, medical records of investigations, procedures or done on stored samples
+
+-   Behavioral exposures
+
+-   Diet, exercise, substance use etc Disease status may influence recall
+
+-   Exposure measurement methods and tools to be same for both cases and controls
+
+# Analysis of Case-Control Study
+
+## Comparisons {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Cohort Study
+
+-   We know totals of exposed and non-exposed since we only fix them
+
+-   We estimate incidence in exposed & non-exposed and compare relative incidence ![](images/comparison_cohort.png)
+:::
+
+::: {.column width="50%"}
+#### **Case-Control Study**
+
+-   We know totals of Cases and Non-cases since we only fix them
+
+-   We estimate exposure odds among cases & non-cases & compute ratio of two odds ![](images/comparison_case_control.png)
+:::
+:::
+
+## Odds ratio {.smaller}
+
+$Odds\ of\ exposure\ in\ Cases = \frac{Number\ of\ exposed\ among\ Cases}{Number\ of\ non-exposed\ among\ Cases}$
+
+$Odds\ of\ exposure\ in\ Cases = \frac{a}{c}$\
+
+$Odds\ of\ exposure\ in\ Non-Cases = \frac{Number\ of\ exposed\ among\ Non-Cases}{Number\ of\ non-exposed\ among\ Non-Cases}$
+
+\
+$Odds\ of\ exposure\ in\ Non-Cases = \frac{b}{c}$
+
+$Odds\ ratio = \frac{Odds\ of\ exposure\ among\ Cases}{Odds\ of\ exposure\ among\ Non-Cases}$
+
+$Odds\ ratio = \frac{ad}{bc}$
+
+![](images/case_control_alphabets.png){fig-align="right" width="545"}
+
+## Interpretation of Odds Ratio
+
+-   Association of exposure and outcome
+
+-   OR \> 1 (more than one)
+
+    -   Cases are more likely to be exposed than non-cases. Exposure may be a risk factor
+
+-   OR \< 1 (less than one)
+
+    -   Cases are less likely to be exposed than non-cases. Exposure may be a protective factor
+
+-   OR =1 (nearly one)
+
+    -   Exposure variable is similarly distributed among Cases and Non-Cases
+
+## Example: Bisphosnates and Atypical Fracture {.smaller}
+
+```{r}
+library(epiR)
+epi.2by2(dat = c(46, 26, 13, 237), method = "case.control")
+```
+
+# Issues in Case-Control Study
+
+## Selection of cases
+
+-   Prevalent cases
+
+    -   Associated factors for duration, survivors
+
+-   Hospitals
+
+    -   Severity
+
+    -   Socio-economic position
+
+-   Differential selection probability
+
+## Selection of controls
+
+-   Hospital
+
+    -   Distinct distribution of variables than population
+
+-   Household / Best friend
+
+    -   Over-matching
+
+-   Population
+
+    -   Non-response
+
+## Measurement of exposure
+
+-   Poor or limited recall
+
+    -   Past exposures not remembered well hence not reported
+    -   Non-differential misclassification
+
+-   Differential recall
+
+    -   Diseased or cases easily identify with exposure than non-cases
+
+    -   Differential misclassification
+
+## Sources of presentation
+
+Chapter-6 Risk: From disease to exposure [@fletcher2013]
+
+Chapter- 7 & 9 : Observational studies [@celentano2018]
+
+# Thank You
+
+## References

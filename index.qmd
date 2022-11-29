@@ -2,10 +2,4 @@
 title: "Epidemiology Resources"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This website is created for hosting the resources related to epidemiology and biostatistics particularly for the clinical and public health researchers.

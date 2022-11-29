@@ -3,15 +3,27 @@ project:
 
 website:
   title: "Epidemiology Resources"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+  sidebar:
+    style: docked
+    contents:
+      - section: "Home"
+        contents:
+          - href: index.qmd
+            text: Home
+      - section: "Presentations"
+        contents:
+          - href: diagrams.qmd
+            text: Schema of Designs
+          - href: case_control.qmd
+            text: Case-Control Study
+          - href: sample_size.qmd
+            text: Sample Size Calculations
+      - section: "About"
+        contents:
+          - about.qmd
 format:
   html:
-    theme: cosmo
+    theme: pulse
     css: styles.css
     toc: true
 
