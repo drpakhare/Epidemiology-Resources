@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.0.36">
+
+  <meta name="author" content="Dr Abhijit P Pakhare">
+  <title>Epidemiology Resources - Case Control Study</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="site_libs/viz-1.8.2/viz.js"></script>
+  <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+  <script src="site_libs/grViz-binding-1.0.9/grViz.js"></script>
+  <script src="site_libs/d3-3.3.8/d3.min.js"></script>
+  <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+  <link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet">
+  <script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+  <script src="site_libs/chromatography-0.1/chromatography.js"></script>
+  <script src="site_libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Case Control Study</h1>
+  <p class="author">Dr Abhijit P Pakhare</p>
+  <p class="institute">All India Institute of Medical Sciences, Bhopal</p>
+</section>
+<section id="TOC">
+<nav role="doc-toc"> 
+<h2 id="toc-title">Outline</h2>
+<ul>
+<li><a href="#/need-of-case-control-study" id="/toc-need-of-case-control-study">Need of Case-Control study</a></li>
+<li><a href="#/design-of-case-control-study" id="/toc-design-of-case-control-study">Design of Case-Control Study</a></li>
+<li><a href="#/analysis-of-case-control-study" id="/toc-analysis-of-case-control-study">Analysis of Case-Control Study</a></li>
+<li><a href="#/issues-in-case-control-study" id="/toc-issues-in-case-control-study">Issues in Case-Control Study</a></li>
+<li><a href="#/thank-you" id="/toc-thank-you">Thank You</a></li>
+</ul>
+</nav>
+</section>
+
+<section>
+<section id="need-of-case-control-study" class="title-slide slide level1 center">
+<h1>Need of Case-Control study</h1>
+
+</section>
+<section id="cohort-study" class="slide level2">
+<h2>Cohort study</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-acd06e27d6f6bd57db4a" style="width:960px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-acd06e27d6f6bd57db4a">{"x":{"diagram":"\ndigraph cohort {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Exposed\", fillcolor= SandyBrown]\nC [label = \"Non-exposed\", fillcolor= LimeGreen]\nD [label = \"Incident Cases\", fillcolor= Salmon]\nE [label = \"Do not develop disease\", fillcolor= LightCyan]\nF [label = \"Incident Cases\", fillcolor= Salmon]\nG [label = \"Do not develop disease\", fillcolor= LightCyan]\nH [label = \"Incidence of disease \nin Exposed\", fillcolor= LightPink]\nI [label = \"Incidence of disease \nin Non-exposed\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"ascertain\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"follow-up\", fontsize=6]\n\nB->D B->E \nC->F C->G \nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H F->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<ul>
+<li><p>Risk</p></li>
+<li><p>Non-event to event</p></li>
+<li><p>Temporality</p></li>
+<li><p>Incidence</p></li>
+<li><p>Relative risk</p></li>
+<li><p>Attributable risk</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="when-longitudinal-follow-up-is-not-possible" class="slide level2">
+<h2>When longitudinal follow up is not possible</h2>
+<ul>
+<li><p>Long latency period of chronic diseases</p>
+<ul>
+<li><p>Smoking ~ CVD, Lung cancer</p></li>
+<li><p>Diet &amp; exercise ~ Osteoporosis</p></li>
+</ul></li>
+<li><p>Disease incidence ~ relatively few</p>
+<ul>
+<li>but all to be followed</li>
+</ul></li>
+<li><p>Very rare diseases- cohort way inefficient</p></li>
+</ul>
+</section>
+<section id="example-1-atypical-fractures" class="slide level2">
+<h2>Example-1: Atypical fractures</h2>
+<ul>
+<li><p>mid 2000s, ~ unusual form of femoral fracture in women</p></li>
+<li><p>Bisphosphonates suspected because</p>
+<ul>
+<li><p>newly introduced at that time</p></li>
+<li><p>act by reducing bone remodeling.</p></li>
+</ul></li>
+<li><p>Case series ~ bisphosphonates and atypical fractures,</p>
+<ul>
+<li><p>other drugs</p></li>
+<li><p>other diseases</p></li>
+</ul></li>
+<li><p>Whether bisphosphonates were independently associated with atypical fractures?</p>
+<h2 id="section"></h2></li>
+</ul>
+</section>
+<section id="example-1-atypical-fractures-1" class="slide level2">
+<h2>Example-1: Atypical fractures</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-9732bf0380f318dd0fcf" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9732bf0380f318dd0fcf">{"x":{"diagram":"\ngraph LR\nA(Population)-->B[Atypical Femoral # <br>   n=59]\nA(Population)-->F[Ordinary Femoral # <br>   n=218]\nB-->D[h/o of Bisphosphonates <br> n= 46]\nB-->E[No h/o of Bisphosphonates <br> n= 13]\nF-->G[h/o of Bisphosphonates <br> n= 26]\nF-->H[No h/o of Bisphosphonates <br> n= 237]\nD-->I{Odds of exposure <br> in Atypical # 46/13}\nE-->I\nG-->J{Odds of exposure <br> in Ordinary # 26/237}\nH-->J\nstyle F fill:#E5E25F\nstyle B fill:#BDA7A7\nstyle D fill:#CD6C6C\nstyle G fill:#CD6C6C\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="example-1-atypical-fractures-2" class="slide level2 smaller">
+<h2>Example-1: Atypical fractures</h2>
+<p>Bisphonates use and atypical fractures of femoral shaft<span class="citation" data-cites="schilcher2011">(<a href="#/ref-schilcher2011" role="doc-biblioref" onclick="return false;">Schilcher, Michaëlsson, and Aspenberg 2011</a>)</span></p>
+<ul>
+<li>National Swedish Patient Register,</li>
+<li>all 59 women age 55 years or older with atypical femoral fractures in 2008</li>
+<li>263 controls, women in the same registry who had had ordinary femoral fractures</li>
+<li>other variables - age, use of bone-modifying drugs (corticosteroids or estrogens), and diseases such as osteoporosis and previous fractures</li>
+<li>concluded women taking bisphosphonates were 33 times more likely to develop atypical fractures</li>
+</ul>
+</section></section>
+<section>
+<section id="design-of-case-control-study" class="title-slide slide level1 center">
+<h1>Design of Case-Control Study</h1>
+
+</section>
+<section id="flow-of-case-control-study" class="slide level2">
+<h2>Flow of Case-Control Study</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-6e57e11de0e230e76d33" style="width:960px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6e57e11de0e230e76d33">{"x":{"diagram":"\ndigraph case_control {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Cases\", fillcolor= SandyBrown]\nC [label = \"Non-Cases\", fillcolor= LimeGreen]\nD [label = \"Exposed\", fillcolor= Salmon]\nE [label = \"Non-Exposed\", fillcolor= LightCyan]\nF [label = \"Exposed\", fillcolor= Salmon]\nG [label = \"Non-Exposed\", fillcolor= LightCyan]\nH [label = \"Odds of Exposure \nin Cases\", fillcolor= LightPink]\nI [label = \"Odds of Exposure \nin Non-Cases\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"select\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"assess\", fontsize=6]\n\nB->D B->E \nC->F C->G \n\nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H \nF->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="control" class="slide level2">
+<h2>Control</h2>
+<ul>
+<li><p>Control in other situations</p></li>
+<li><p>Experimental studies</p>
+<ul>
+<li>those who are not exposed to the intervention</li>
+</ul></li>
+<li><p>Diagnostic laboratories</p>
+<ul>
+<li>Specimen which have known amount of what is being tested</li>
+</ul></li>
+<li><p>Case-control study-</p>
+<ul>
+<li><p>those who do not have disease or outcome</p></li>
+<li><p>controls- take in account or subtract the effects of other variables</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="selection-of-cases" class="slide level2">
+<h2>Selection of cases</h2>
+<ul>
+<li><p>Diagnosis - rigorously confirmed</p></li>
+<li><p>All cases or representative sample from defined population</p></li>
+<li><p>Hospital cases</p>
+<ul>
+<li><p>Severity or atypical nature</p></li>
+<li><p>Catchment area</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="selection-of-controls" class="slide level2">
+<h2>Selection of controls</h2>
+<ul>
+<li><p>Validity- comparability of cases and controls</p></li>
+<li><p>Cases and controls should be members of same base population</p></li>
+<li><p>Random sample of non-cases</p></li>
+<li><p>Methods of selection</p>
+<ul>
+<li><p>Population approach</p></li>
+<li><p>Cohort approach</p></li>
+<li><p>Hospital &amp; Community approach</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="population-approach" class="slide level2">
+<h2>Population approach</h2>
+<ul>
+<li><p>Random sample of defined population</p></li>
+<li><p>Dynamic population</p></li>
+<li><p>Cases and controls selected at similar calender time</p></li>
+</ul>
+</section>
+<section id="cohort-approach" class="slide level2">
+<h2>Cohort approach</h2>
+<ul>
+<li><p>Cases and control sampled from same cohort</p></li>
+<li><p>All cases and random sample from base cohort</p>
+<ul>
+<li>Case-cohort study</li>
+</ul></li>
+<li><p>All cases and random sample at the time of incident case</p>
+<ul>
+<li>Nested Case-Control study</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-do-case-control-within-cohort" class="slide level2">
+<h2>Why do case-control within cohort?</h2>
+<ul>
+<li><p>When variables not available in cohort base are to be studied</p></li>
+<li><p>not collected at base</p>
+<ul>
+<li>not feasible to collect for all participants at baseline</li>
+<li>cost
+<ul>
+<li><p>additional biomarkers</p></li>
+<li><p>genetic analysis</p></li>
+</ul></li>
+<li>time
+<ul>
+<li><p>missing information from records</p></li>
+<li><p>additional questionnaire</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="hospital-and-community-controls" class="slide level2 smaller">
+<h2>Hospital and Community Controls</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Hospital</p>
+<ul>
+<li><p>Select comparable controls</p></li>
+<li><p>Cases from hospital ward- controls from a different disease from same hospital</p></li>
+<li><p>Hospitalized patients usually have different distribution compared to the rest of the population</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Community</p>
+<ul>
+<li><p>From catchment area of hospital</p></li>
+<li><p>Neighborhood controls</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="measurement-of-exposure" class="slide level2">
+<h2>Measurement of exposure</h2>
+<ul>
+<li><p>More than one control group</p>
+<ul>
+<li><p>Community</p></li>
+<li><p>Hospital</p>
+<ul>
+<li><p>Another disease</p></li>
+<li><p>Non-diseased - Caregivers</p></li>
+</ul></li>
+</ul></li>
+<li><p>Odds ratios across groups</p>
+<ul>
+<li>Similar- less likelihood of bias</li>
+<li>Heterogeneous- Bias likely</li>
+</ul></li>
+</ul>
+</section>
+<section id="multiple-controls-per-case" class="slide level2">
+<h2>Multiple controls per case</h2>
+<ul>
+<li><p>Different from multiple control groups</p></li>
+<li><p>More than 1 control for a cases</p></li>
+<li><p>Useful in case of very rare disease as cases will be few</p></li>
+<li><p>To improve statistical power</p></li>
+<li><p>Maximum up to 3 to 4 controls per case</p></li>
+</ul>
+</section>
+<section id="measurement-of-exposure-1" class="slide level2 smaller">
+<h2>Measurement of exposure</h2>
+<ul>
+<li><p>Complete &amp; accurate records before development of disease</p></li>
+<li><p>Can be done for prescriptions, medical records of investigations, procedures or done on stored samples</p></li>
+<li><p>Behavioral exposures</p></li>
+<li><p>Diet, exercise, substance use etc Disease status may influence recall</p></li>
+<li><p>Exposure measurement methods and tools to be same for both cases and controls</p></li>
+</ul>
+</section></section>
+<section>
+<section id="analysis-of-case-control-study" class="title-slide slide level1 center">
+<h1>Analysis of Case-Control Study</h1>
+
+</section>
+<section id="comparisons" class="slide level2 smaller">
+<h2>Comparisons</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="cohort-study-1">Cohort Study</h4>
+<ul>
+<li><p>We know totals of exposed and non-exposed since we only fix them</p></li>
+<li><p>We estimate incidence in exposed &amp; non-exposed and compare relative incidence <img data-src="images/comparison_cohort.png"></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h4 id="case-control-study"><strong>Case-Control Study</strong></h4>
+<ul>
+<li><p>We know totals of Cases and Non-cases since we only fix them</p></li>
+<li><p>We estimate exposure odds among cases &amp; non-cases &amp; compute ratio of two odds <img data-src="images/comparison_case_control.png"></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="odds-ratio" class="slide level2 smaller">
+<h2>Odds ratio</h2>
+<p><span class="math inline">\(Odds\ of\ exposure\ in\ Cases = \frac{Number\ of\ exposed\ among\ Cases}{Number\ of\ non-exposed\ among\ Cases}\)</span></p>
+<p><span class="math inline">\(Odds\ of\ exposure\ in\ Cases = \frac{a}{c}\)</span><br>
+</p>
+<p><span class="math inline">\(Odds\ of\ exposure\ in\ Non-Cases = \frac{Number\ of\ exposed\ among\ Non-Cases}{Number\ of\ non-exposed\ among\ Non-Cases}\)</span></p>
+<p><br>
+<span class="math inline">\(Odds\ of\ exposure\ in\ Non-Cases = \frac{b}{c}\)</span></p>
+<p><span class="math inline">\(Odds\ ratio = \frac{Odds\ of\ exposure\ among\ Cases}{Odds\ of\ exposure\ among\ Non-Cases}\)</span></p>
+<p><span class="math inline">\(Odds\ ratio = \frac{ad}{bc}\)</span></p>
+
+<img data-src="images/case_control_alphabets.png" width="545" class="r-stretch quarto-figure-right"></section>
+<section id="interpretation-of-odds-ratio" class="slide level2">
+<h2>Interpretation of Odds Ratio</h2>
+<ul>
+<li><p>Association of exposure and outcome</p></li>
+<li><p>OR &gt; 1 (more than one)</p>
+<ul>
+<li>Cases are more likely to be exposed than non-cases. Exposure may be a risk factor</li>
+</ul></li>
+<li><p>OR &lt; 1 (less than one)</p>
+<ul>
+<li>Cases are less likely to be exposed than non-cases. Exposure may be a protective factor</li>
+</ul></li>
+<li><p>OR =1 (nearly one)</p>
+<ul>
+<li>Exposure variable is similarly distributed among Cases and Non-Cases</li>
+</ul></li>
+</ul>
+</section>
+<section id="example-bisphosnates-and-atypical-fracture" class="slide level2 smaller">
+<h2>Example: Bisphosnates and Atypical Fracture</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>             Outcome +    Outcome -      Total        Prevalence *        Odds
+Exposed +           46           26         72                63.9      1.7692
+Exposed -           13          237        250                 5.2      0.0549
+Total               59          263        322                18.3      0.2243
+
+Point estimates and 95% CIs:
+-------------------------------------------------------------------
+Odds ratio                                     32.25 (15.44, 67.39)
+Attrib fraction (est) in the exposed (%)      96.84 (93.16, 98.62)
+Attrib fraction (est) in the population (%)   75.55 (60.42, 84.90)
+-------------------------------------------------------------------
+Uncorrected chi2 test that OR = 1: chi2(1) = 128.657 Pr&gt;chi2 = &lt;0.001
+Fisher exact test that OR = 1: Pr&gt;chi2 = &lt;0.001
+ Wald confidence limits
+ CI: confidence interval
+ * Outcomes per 100 population units </code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="issues-in-case-control-study" class="title-slide slide level1 center">
+<h1>Issues in Case-Control Study</h1>
+
+</section>
+<section id="selection-of-cases-1" class="slide level2">
+<h2>Selection of cases</h2>
+<ul>
+<li><p>Prevalent cases</p>
+<ul>
+<li>Associated factors for duration, survivors</li>
+</ul></li>
+<li><p>Hospitals</p>
+<ul>
+<li><p>Severity</p></li>
+<li><p>Socio-economic position</p></li>
+</ul></li>
+<li><p>Differential selection probability</p></li>
+</ul>
+</section>
+<section id="selection-of-controls-1" class="slide level2">
+<h2>Selection of controls</h2>
+<ul>
+<li><p>Hospital</p>
+<ul>
+<li>Distinct distribution of variables than population</li>
+</ul></li>
+<li><p>Household / Best friend</p>
+<ul>
+<li>Over-matching</li>
+</ul></li>
+<li><p>Population</p>
+<ul>
+<li>Non-response</li>
+</ul></li>
+</ul>
+</section>
+<section id="measurement-of-exposure-2" class="slide level2">
+<h2>Measurement of exposure</h2>
+<ul>
+<li><p>Poor or limited recall</p>
+<ul>
+<li>Past exposures not remembered well hence not reported</li>
+<li>Non-differential misclassification</li>
+</ul></li>
+<li><p>Differential recall</p>
+<ul>
+<li><p>Diseased or cases easily identify with exposure than non-cases</p></li>
+<li><p>Differential misclassification</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="sources-of-presentation" class="slide level2">
+<h2>Sources of presentation</h2>
+<p>Chapter-6 Risk: From disease to exposure <span class="citation" data-cites="fletcher2013">(<a href="#/ref-fletcher2013" role="doc-biblioref" onclick="return false;">Fletcher, Fletcher, and Msc 2013</a>)</span></p>
+<p>Chapter- 7 &amp; 9 : Observational studies <span class="citation" data-cites="celentano2018">(<a href="#/ref-celentano2018" role="doc-biblioref" onclick="return false;">Celentano and Szklo 2018</a>)</span></p>
+</section></section>
+<section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank You</h1>
+
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+
+<img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p>Study Designs Workshop @ AIIMS Bhopal</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-celentano2018" class="csl-entry" role="doc-biblioentry">
+Celentano, David D., and Moyses Szklo. 2018. <em>Gordis Epidemiology</em>. Elsevier Health Sciences.
+</div>
+<div id="ref-fletcher2013" class="csl-entry" role="doc-biblioentry">
+Fletcher, Robert, Suzanne W. Fletcher, and Suzanne W. Fletcher, MD Msc. 2013. <em>Clinical Epidemiology: The Essentials</em>. Lippincott Williams &amp; Wilkins.
+</div>
+<div id="ref-schilcher2011" class="csl-entry" role="doc-biblioentry">
+Schilcher, Jörg, Karl Michaëlsson, and Per Aspenberg. 2011. <span>“Bisphosphonate Use and Atypical Fractures of the Femoral Shaft.”</span> <em>New England Journal of Medicine</em> 364 (18): 1728–37. <a href="https://doi.org/10.1056/NEJMoa1010650">https://doi.org/10.1056/NEJMoa1010650</a>.
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>
