@@ -376,8 +376,8 @@
 <div class="column" style="width:70%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-acd06e27d6f6bd57db4a" style="width:960px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-acd06e27d6f6bd57db4a">{"x":{"diagram":"\ndigraph cohort {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Exposed\", fillcolor= SandyBrown]\nC [label = \"Non-exposed\", fillcolor= LimeGreen]\nD [label = \"Incident Cases\", fillcolor= Salmon]\nE [label = \"Do not develop disease\", fillcolor= LightCyan]\nF [label = \"Incident Cases\", fillcolor= Salmon]\nG [label = \"Do not develop disease\", fillcolor= LightCyan]\nH [label = \"Incidence of disease \nin Exposed\", fillcolor= LightPink]\nI [label = \"Incidence of disease \nin Non-exposed\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"ascertain\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"follow-up\", fontsize=6]\n\nB->D B->E \nC->F C->G \nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H F->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f874c22b1c4452dd3835" style="width:960px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f874c22b1c4452dd3835">{"x":{"diagram":"\ndigraph cohort {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Exposed\", fillcolor= SandyBrown]\nC [label = \"Non-exposed\", fillcolor= LimeGreen]\nD [label = \"Incident Cases\", fillcolor= Salmon]\nE [label = \"Do not develop disease\", fillcolor= LightCyan]\nF [label = \"Incident Cases\", fillcolor= Salmon]\nG [label = \"Do not develop disease\", fillcolor= LightCyan]\nH [label = \"Incidence of disease \nin Exposed\", fillcolor= LightPink]\nI [label = \"Incidence of disease \nin Non-exposed\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"ascertain\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"follow-up\", fontsize=6]\n\nB->D B->E \nC->F C->G \nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H F->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div><div class="column" style="width:30%;">
@@ -429,8 +429,8 @@
 <h2>Example-1: Atypical fractures</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-9732bf0380f318dd0fcf" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9732bf0380f318dd0fcf">{"x":{"diagram":"\ngraph LR\nA(Population)-->B[Atypical Femoral # <br>   n=59]\nA(Population)-->F[Ordinary Femoral # <br>   n=218]\nB-->D[h/o of Bisphosphonates <br> n= 46]\nB-->E[No h/o of Bisphosphonates <br> n= 13]\nF-->G[h/o of Bisphosphonates <br> n= 26]\nF-->H[No h/o of Bisphosphonates <br> n= 237]\nD-->I{Odds of exposure <br> in Atypical # 46/13}\nE-->I\nG-->J{Odds of exposure <br> in Ordinary # 26/237}\nH-->J\nstyle F fill:#E5E25F\nstyle B fill:#BDA7A7\nstyle D fill:#CD6C6C\nstyle G fill:#CD6C6C\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-395f90e96f11292e8c03" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-395f90e96f11292e8c03">{"x":{"diagram":"\ngraph LR\nA(Population)-->B[Atypical Femoral # <br>   n=59]\nA(Population)-->F[Ordinary Femoral # <br>   n=218]\nB-->D[h/o of Bisphosphonates <br> n= 46]\nB-->E[No h/o of Bisphosphonates <br> n= 13]\nF-->G[h/o of Bisphosphonates <br> n= 26]\nF-->H[No h/o of Bisphosphonates <br> n= 237]\nD-->I{Odds of exposure <br> in Atypical # 46/13}\nE-->I\nG-->J{Odds of exposure <br> in Ordinary # 26/237}\nH-->J\nstyle F fill:#E5E25F\nstyle B fill:#BDA7A7\nstyle D fill:#CD6C6C\nstyle G fill:#CD6C6C\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -454,8 +454,8 @@
 <h2>Flow of Case-Control Study</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-6e57e11de0e230e76d33" style="width:960px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6e57e11de0e230e76d33">{"x":{"diagram":"\ndigraph case_control {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Cases\", fillcolor= SandyBrown]\nC [label = \"Non-Cases\", fillcolor= LimeGreen]\nD [label = \"Exposed\", fillcolor= Salmon]\nE [label = \"Non-Exposed\", fillcolor= LightCyan]\nF [label = \"Exposed\", fillcolor= Salmon]\nG [label = \"Non-Exposed\", fillcolor= LightCyan]\nH [label = \"Odds of Exposure \nin Cases\", fillcolor= LightPink]\nI [label = \"Odds of Exposure \nin Non-Cases\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"select\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"assess\", fontsize=6]\n\nB->D B->E \nC->F C->G \n\nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H \nF->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-04eefd4edfae4b6baa04" style="width:960px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-04eefd4edfae4b6baa04">{"x":{"diagram":"\ndigraph case_control {\ngraph[rankdir = LR]\n\nnode [fontname = Helvetica, shape=box,  style=filled]\n\nA [label = \"Population\", fillcolor= LightBlue]\nB [label = \"Cases\", fillcolor= SandyBrown]\nC [label = \"Non-Cases\", fillcolor= LimeGreen]\nD [label = \"Exposed\", fillcolor= Salmon]\nE [label = \"Non-Exposed\", fillcolor= LightCyan]\nF [label = \"Exposed\", fillcolor= Salmon]\nG [label = \"Non-Exposed\", fillcolor= LightCyan]\nH [label = \"Odds of Exposure \nin Cases\", fillcolor= LightPink]\nI [label = \"Odds of Exposure \nin Non-Cases\", fillcolor= LightPink]\n# several \"edge\" statements\nedge [label= \"select\", fontsize=6]\n\nA->B A->C \n\nedge [label= \"assess\", fontsize=6]\n\nB->D B->E \nC->F C->G \n\nedge [arrowhead = none, arrowtail = none, style=tapered, label= \"estimate\", fontsize=6]\nD->H E->H \nF->I G->I\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>

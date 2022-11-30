@@ -175,6 +175,13 @@
     "text": "References\n\n\n\nStudy Designs Workshop @ AIIMS Bhopal\n\n\n\nCelentano, David D., and Moyses Szklo. 2018. Gordis Epidemiology. Elsevier Health Sciences.\n\n\nFletcher, Robert, Suzanne W. Fletcher, and Suzanne W. Fletcher, MD Msc. 2013. Clinical Epidemiology: The Essentials. Lippincott Williams & Wilkins.\n\n\nSchilcher, Jörg, Karl Michaëlsson, and Per Aspenberg. 2011. “Bisphosphonate Use and Atypical Fractures of the Femoral Shaft.” New England Journal of Medicine 364 (18): 1728–37. https://doi.org/10.1056/NEJMoa1010650."
   },
   {
+    "objectID": "sample_size.html#presentation-qr-code",
+    "href": "sample_size.html#presentation-qr-code",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Presentation QR Code",
+    "text": "Presentation QR Code"
+  },
+  {
     "objectID": "sample_size.html#what-to-expect-from-this-session",
     "href": "sample_size.html#what-to-expect-from-this-session",
     "title": "Sample Size Calculations for Medical PG Thesis Protocol",
@@ -193,7 +200,7 @@
     "href": "sample_size.html#pre-requisites-for-sample-size-estimation",
     "title": "Sample Size Calculations for Medical PG Thesis Protocol",
     "section": "Pre-requisites for sample size estimation",
-    "text": "Pre-requisites for sample size estimation\n\nClear research question/hypothesis\nStatistical test- for effect estimation or testing\nAssumptions or expected results or prior data Width or precision around expected results (Confidence interval)\nConfidence level (related to Type-I error)\nPower (related to Type-II error)"
+    "text": "Pre-requisites for sample size estimation\n\nClear research question/hypothesis\nStatistical test- for effect estimation or testing\nAssumptions or expected results or prior data Width or precision around expected results (Confidence interval) or effect size\nConfidence level (related to Type-I error)\nPower (related to Type-II error)"
   },
   {
     "objectID": "sample_size.html#special-considerations-for-thesis",
@@ -242,7 +249,7 @@
     "href": "sample_size.html#sample-size-to-compare-two-independent-proportions--demo",
     "title": "Sample Size Calculations for Medical PG Thesis Protocol",
     "section": "Sample size to compare two independent proportions- Demo",
-    "text": "Sample size to compare two independent proportions- Demo\n\n\nhttps://wnarifin.github.io/ssc_web.html\n\n\nNULL\n\n\n\nHow to guide"
+    "text": "Sample size to compare two independent proportions- Demo\n\n\nWeb App Link\n\n\n\n\n\n\nHow to guide"
   },
   {
     "objectID": "sample_size.html#sample-size-to-compare-two-independent-proportions-by-hand",
@@ -252,11 +259,46 @@
     "text": "Sample size to compare two independent proportions by hand\n\\[\nn = 16  P  Q / d^2\n\\]\n\n\\(P = (p1 + p2)/2\\)\n\\(Q = 1-P\\)\n\\(d = p1 - p2\\)\np1 : proportion in Group-1 and p2 : proportion in Group-2\ncalculated sample size is per group\nestimates sample size with 95% confidence level and 80% power"
   },
   {
+    "objectID": "sample_size.html#sample-size-for-comparing-two-independent-means",
+    "href": "sample_size.html#sample-size-for-comparing-two-independent-means",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size for comparing two independent means",
+    "text": "Sample size for comparing two independent means\n\n\nSample Size Web App\n\n\n\n\n\n\nHow to guide"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-estimate-single-mean",
+    "href": "sample_size.html#sample-size-to-estimate-single-mean",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to estimate single mean",
+    "text": "Sample size to estimate single mean\n\n\nSample Size Web App\n\n\n\n\n\n\nHow to guide"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-to-estimate-correlation-coefficient",
+    "href": "sample_size.html#sample-size-to-estimate-correlation-coefficient",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size to estimate Correlation Coefficient",
+    "text": "Sample size to estimate Correlation Coefficient\n\n\nApproach-1: Expected correlation different from no correlation\nHow to guide\n\n\n\n\n\n\nApproach-2: Estimate correlation coefficient with some precision\nHow to guide"
+  },
+  {
+    "objectID": "sample_size.html#sample-size-tutorials-link",
+    "href": "sample_size.html#sample-size-tutorials-link",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Sample size tutorials link",
+    "text": "Sample size tutorials link\nHow to calculate sample size on WebApp"
+  },
+  {
     "objectID": "sample_size.html#gpower-resources",
     "href": "sample_size.html#gpower-resources",
     "title": "Sample Size Calculations for Medical PG Thesis Protocol",
     "section": "G*Power resources",
-    "text": "G*Power resources\nG*Power Home Page\nG*Power Tutorials\n\n\n\nPG Thesis Protocol Workshop @ AIIMS Bhopal"
+    "text": "G*Power resources\nG*Power Home Page\nG*Power Tutorials"
+  },
+  {
+    "objectID": "sample_size.html#previous-session-on-sample-size-for-diagnostic-research",
+    "href": "sample_size.html#previous-session-on-sample-size-for-diagnostic-research",
+    "title": "Sample Size Calculations for Medical PG Thesis Protocol",
+    "section": "Previous session on Sample Size for Diagnostic Research",
+    "text": "Previous session on Sample Size for Diagnostic Research"
   },
   {
     "objectID": "index.html",
